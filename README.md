@@ -1,6 +1,10 @@
 # alias
 This README contains the latest documentation to setup Project Alias on a Raspberry Pi A+.
 
+## Pi HAT
+
+If you choose to not modify the shell for using a plug-in power supply cable, you can skip on to the next section. However, if you're hard wiring the power source onto the GPIO header pins of your Pi HAT, then you'll need this [schematic](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/#schematic-online-viewer). The schematic will show you the role of each pin on the header. The top left most pins are where you'll need to focus. On the first row, the first pin will supply power to the Pi HAT, so solder your hot wire there. Skip two pins to the right that will be the pin you solder your ground wire to.
+
 ## Configuring Your Pi To Use Alias
 
 ### SD Card & Pi OS
