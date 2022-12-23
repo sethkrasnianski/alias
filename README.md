@@ -111,3 +111,9 @@ sudo cp alias.service /etc/systemd/system/alias.service
 sudo chmod 644 /etc/systemd/system/alias.service
 systemctl enable alias
 ```
+
+### Socket.io
+
+```html
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+```
