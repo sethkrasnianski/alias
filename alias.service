@@ -1,0 +1,20 @@
+[Unit]
+Description=Project Alias
+After=network.target
+Requires=network.target
+
+[Service]
+Type=idle
+Environment="XDG_RUNTIME_DIR=/run/user/1000"
+Environment="PULSE_RUNTIME_PATH=/run/user/1000/pulse/"
+ExecStartPre=/usr/bin/python3 -u sleep.py
+ExecStart=/usr/bin/python3 -u app.py
+WorkingDirectory=/home/{your-user}/project_alias
+StandardOutput=append:/home/{your-user}/alias-output.log
+StandardError=append:/home/{your-user}/alias-errors.log
+Restart=always
+RestartSec=0
+User=pi
+
+[Install]
+WantedBy=multi-user.target
